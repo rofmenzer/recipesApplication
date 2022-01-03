@@ -8,24 +8,28 @@ export class RecipeService {
   recipeSelected = new EventEmitter<Recipe>();
   private recipes: Recipe[] = [
     new Recipe(
-      'A test Recipe',
-      'this is simply a test',
-      'https://www.simplyrecipes.com/thmb/UIpnKDZSVS4eIKgreoH6QauP0KQ=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2012__07__grilled-sweet-potatoes-vertical-a-1600-0eafb4cd27b74617abb36379751eed51.jpg',
-      [new Ingredient('Meat', 1),
-        new Ingredient('French Fries', 10)
+      'Tasty Bourek',
+      'Algerian food amazingly tasty',
+      'https://img-3.journaldesfemmes.fr/I48sy3I7FBg8MtJm8XQg-8XueRg=/748x499/smart/f372439b07614d7e8136cfda351f5544/recipe-jdf/372518.jpg',
+      [new Ingredient('Meat', 500),
+        new Ingredient('Dyoul', 10)
       ]),
     new Recipe(
-      'Another test Recipe',
-      'this is simply a test',
-      'https://www.simplyrecipes.com/thmb/UIpnKDZSVS4eIKgreoH6QauP0KQ=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2012__07__grilled-sweet-potatoes-vertical-a-1600-0eafb4cd27b74617abb36379751eed51.jpg',
-      [new Ingredient('cheese', 2),
-        new Ingredient('bread', 2)]),
+      'Couscous',
+      'tAnother algerian dish',
+      'https://assets.afcdn.com/recipe/20200828/113350_w1024h576c1cx2880cy1920.jpg',
+      [new Ingredient('Couscous', 1),
+        new Ingredient('meat', 4)]),
 
   ];
   constructor(private shoppingListService: ShoppingListService){};
 
-  getRecipe() {
+  getRecipes() {
     return this.recipes.slice();
+  }
+  getRecipe(index: number){
+
+    return this.recipes[index];
   }
   addIngredientToShoppingList(ingredients: Ingredient[]){
     this.shoppingListService.addIngredients(ingredients);
