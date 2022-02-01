@@ -3,14 +3,19 @@
 Recipe Application in Angular 13.
 
 ## Big titles:
-Angular-cli
-Data binding
-Events
-Observabal
-Service Injection
-I/O
-HTTP clients
-Auth JWT
+Angular-cli,
+Angular component,
+Data binding,
+Events,
+Observabal,
+Service Injection,
+I/O,
+HTTP clients,
+
+#Doing:
+FireBAse,
+Auth JWT,
+Deptoy application
 
 ## Development server
 
