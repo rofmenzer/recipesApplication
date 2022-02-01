@@ -1,6 +1,16 @@
 # MyProject
 
-A simple Recipe Application in Angular 13.
+Recipe Application in Angular 13.
+
+## Big titles:
+Angular-cli
+Data binding
+Events
+Observabal
+Service Injection
+I/O
+HTTP clients
+Auth JWT
 
 ## Development server
 
